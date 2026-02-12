@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>SilverNews — Your Source for Gaming News, Reviews & Interviews</title>
+  <meta name="description" content="SilverNews brings you the latest gaming news, upcoming game releases, in-depth reviews, and exclusive interviews with industry leaders.">
+  <meta name="keywords" content="gaming news, video games, game reviews, upcoming games, game releases, gaming interviews, esports">
+  <meta name="author" content="SilverNews">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- Google Discover & Google News Optimization -->
+  <meta name="googlebot" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://silvernews.com/">
+
+  <!-- Open Graph (Facebook, Discord, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SilverNews">
+  <meta property="og:title" content="SilverNews — Your Source for Gaming News, Reviews & Interviews">
+  <meta property="og:description" content="SilverNews brings you the latest gaming news, upcoming game releases, in-depth reviews, and exclusive interviews with industry leaders.">
+  <meta property="og:image" content="https://silvernews.com/images/og-cover.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://silvernews.com/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@silvernews">
+  <meta name="twitter:title" content="SilverNews — Your Source for Gaming News, Reviews & Interviews">
+  <meta name="twitter:description" content="SilverNews brings you the latest gaming news, upcoming game releases, in-depth reviews, and exclusive interviews with industry leaders.">
+  <meta name="twitter:image" content="https://silvernews.com/images/og-cover.jpg">
+
+  <!-- Schema.org Structured Data for Google Discover -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SilverNews",
+    "url": "https://silvernews.com",
+    "description": "Your source for gaming news, reviews & interviews",
+    "publisher": {
+      "@type": "Organization",
+      "name": "SilverNews",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://silvernews.com/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://silvernews.com/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Animated Background Particles -->
+  <div class="bg-particles" id="particles"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🎮</div>
+        <span>SilverNews</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="category.html" class="nav-link">New Releases</a>
+        <a href="category.html" class="nav-link">Upcoming</a>
+        <a href="category.html" class="nav-link">Reviews</a>
+        <a href="category.html" class="nav-link">Interviews</a>
+        <a href="#" class="nav-link">News</a>
+        <button class="nav-search" aria-label="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </nav>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO SLIDER ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-slider" id="heroSlider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active" data-index="0">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&q=80" alt="GTA VI Release Date Confirmed" class="hero-slide-image" loading="eager">
+        <div class="hero-slide-overlay"></div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide" data-index="1">
+        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1920&q=80" alt="The Future of Cloud Gaming" class="hero-slide-image" loading="lazy">
+        <div class="hero-slide-overlay"></div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide" data-index="2">
+        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1920&q=80" alt="PS6 Hardware Leak" class="hero-slide-image" loading="lazy">
+        <div class="hero-slide-overlay"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="container">
+        <div class="hero-badge">
+          <span class="live-dot"></span>
+          Breaking News
+        </div>
+        <h1 class="hero-title" id="heroTitle">GTA VI Official Release Date Finally Confirmed by Rockstar Games</h1>
+        <p class="hero-excerpt" id="heroExcerpt">Rockstar Games has officially confirmed the highly anticipated release window for Grand Theft Auto VI, sending shockwaves across the gaming community worldwide.</p>
+        <div class="hero-meta">
+          <span class="hero-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            5 min read
+          </span>
+          <span class="hero-meta-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            Alex Morgan
+          </span>
+          <span class="hero-meta-item">Feb 12, 2026</span>
+        </div>
+        <a href="article.html" class="hero-cta">
+          Read Full Story
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Slider Controls -->
+    <div class="hero-controls">
+      <div class="hero-dots" id="heroDots">
+        <div class="hero-dot active" data-index="0"></div>
+        <div class="hero-dot" data-index="1"></div>
+        <div class="hero-dot" data-index="2"></div>
+      </div>
+      <button class="hero-nav-btn" id="heroPrev" aria-label="Previous slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-nav-btn" id="heroNext" aria-label="Next slide">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============ TRENDING TICKER ============ -->
+  <div class="ticker">
+    <div class="container">
+      <div class="ticker-inner">
+        <div class="ticker-label">
+          <span class="icon">🔥</span> Trending
+        </div>
+        <div class="ticker-track">
+          <a href="#" class="ticker-item">Elder Scrolls VI gets a new teaser trailer</a>
+          <a href="#" class="ticker-item">Nintendo Switch 2 pre-orders open next week</a>
+          <a href="#" class="ticker-item">Elden Ring DLC breaks sales records</a>
+          <a href="#" class="ticker-item">Sony acquires major indie studio</a>
+          <a href="#" class="ticker-item">Cyberpunk 2077 sequel officially in development</a>
+          <a href="#" class="ticker-item">Xbox Game Pass reaches 50 million subscribers</a>
+          <a href="#" class="ticker-item">Elder Scrolls VI gets a new teaser trailer</a>
+          <a href="#" class="ticker-item">Nintendo Switch 2 pre-orders open next week</a>
+          <a href="#" class="ticker-item">Elden Ring DLC breaks sales records</a>
+          <a href="#" class="ticker-item">Sony acquires major indie studio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LATEST NEWS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Latest News</h2>
+        <a href="category.html" class="section-link">
+          View All
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div class="news-grid">
+        <!-- Featured Card -->
+        <article class="card card--featured reveal">
+          <a href="article.html" class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=800&q=80" alt="Unreal Engine 6 Announced" class="card-image" width="1200" height="675" loading="lazy">
+            <span class="card-category">🆕 New Release</span>
+          </a>
+          <div class="card-body">
+            <a href="article.html"><h3 class="card-title">Unreal Engine 6 Announced with Revolutionary AI-Powered Tools for Game Developers</h3></a>
+            <p class="card-excerpt">Epic Games reveals Unreal Engine 6 with groundbreaking AI integration, real-time global illumination, and a new subscription model aimed at indie developers.</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>Sarah Chen</span>
+              </div>
+              <span>12 Feb 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card reveal">
+          <a href="article.html" class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&q=80" alt="Best RPGs 2026" class="card-image" width="1200" height="675" loading="lazy">
+            <span class="card-category">📋 Reviews</span>
+          </a>
+          <div class="card-body">
+            <a href="article.html"><h3 class="card-title">Top 15 RPGs That Will Define 2026 — Our Complete Ranked List</h3></a>
+            <p class="card-excerpt">From Fable to Dragon Age, these role-playing games are set to dominate the year.</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>James Wright</span>
+              </div>
+              <span>11 Feb 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card reveal">
+          <a href="article.html" class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1585620385456-4a0a3e5a4dce?w=600&q=80" alt="Steam Record" class="card-image" width="1200" height="675" loading="lazy">
+            <span class="card-category">📰 Industry</span>
+          </a>
+          <div class="card-body">
+            <a href="article.html"><h3 class="card-title">Steam Hits Record 40 Million Concurrent Users on a Single Day</h3></a>
+            <p class="card-excerpt">Valve's gaming platform continues to break records with unprecedented player engagement.</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>Mike Torres</span>
+              </div>
+              <span>10 Feb 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card reveal">
+          <a href="article.html" class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=600&q=80" alt="PlayStation VR3" class="card-image" width="1200" height="675" loading="lazy">
+            <span class="card-category">🎮 Hardware</span>
+          </a>
+          <div class="card-body">
+            <a href="article.html"><h3 class="card-title">PlayStation VR3 Leak Reveals Eye-Tracking and Haptic Gloves</h3></a>
+            <p class="card-excerpt">Sony's next-gen VR headset reportedly features advanced eye-tracking technology and haptic feedback.</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>Lisa Park</span>
+              </div>
+              <span>9 Feb 2026</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card reveal">
+          <a href="article.html" class="card-image-wrap">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&q=80" alt="Retro Gaming" class="card-image" width="1200" height="675" loading="lazy">
+            <span class="card-category">🕹️ Retro</span>
+          </a>
+          <div class="card-body">
+            <a href="article.html"><h3 class="card-title">How Retro Gaming Is Making a Massive Comeback in 2026</h3></a>
+            <p class="card-excerpt">From pixel art to chiptune soundtracks, the retro gaming movement is bigger than ever.</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>David Kim</span>
+              </div>
+              <span>8 Feb 2026</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ UPCOMING GAMES ============ -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Upcoming Games</h2>
+        <a href="category.html" class="section-link">
+          Full Calendar
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div class="upcoming-grid">
+        <!-- Game Card 1 -->
+        <div class="game-card reveal">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=400&q=80" alt="Fable IV" class="game-card-image" width="400" height="533" loading="lazy">
+          <div class="game-card-overlay">
+            <span class="game-card-date">Mar 15, 2026</span>
+            <h3 class="game-card-title">Fable IV</h3>
+            <div class="game-card-platforms">
+              <span class="platform-tag">Xbox</span>
+              <span class="platform-tag">PC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 2 -->
+        <div class="game-card reveal">
+          <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?w=400&q=80" alt="Hollow Knight Silksong" class="game-card-image" width="400" height="533" loading="lazy">
+          <div class="game-card-overlay">
+            <span class="game-card-date">Apr 2, 2026</span>
+            <h3 class="game-card-title">Hollow Knight: Silksong</h3>
+            <div class="game-card-platforms">
+              <span class="platform-tag">Switch</span>
+              <span class="platform-tag">PC</span>
+              <span class="platform-tag">PS5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 3 -->
+        <div class="game-card reveal">
+          <img src="https://images.unsplash.com/photo-1548484352-ea579e5233a8?w=400&q=80" alt="Wolverine" class="game-card-image" width="400" height="533" loading="lazy">
+          <div class="game-card-overlay">
+            <span class="game-card-date">May 20, 2026</span>
+            <h3 class="game-card-title">Marvel's Wolverine</h3>
+            <div class="game-card-platforms">
+              <span class="platform-tag">PS5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game Card 4 -->
+        <div class="game-card reveal">
+          <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400&q=80" alt="Death Stranding 3" class="game-card-image" width="400" height="533" loading="lazy">
+          <div class="game-card-overlay">
+            <span class="game-card-date">Q3 2026</span>
+            <h3 class="game-card-title">Death Stranding 3</h3>
+            <div class="game-card-platforms">
+              <span class="platform-tag">PS5</span>
+              <span class="platform-tag">PC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERVIEWS ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="section-title">Featured Interviews</h2>
+        <a href="category.html" class="section-link">
+          All Interviews
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </a>
+      </div>
+
+      <div class="interview-grid">
+        <a href="article.html" class="interview-card reveal">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80" alt="Phil Spencer" class="interview-avatar" loading="lazy">
+          <div class="interview-info">
+            <span class="interview-label">Exclusive Interview</span>
+            <h3 class="interview-name">Phil Spencer</h3>
+            <p class="interview-role">Head of Xbox & Microsoft Gaming</p>
+            <p class="interview-excerpt">"The future of gaming isn't about platforms — it's about bringing players together no matter where they play."</p>
+          </div>
+        </a>
+
+        <a href="article.html" class="interview-card reveal">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80" alt="Hideo Kojima" class="interview-avatar" loading="lazy">
+          <div class="interview-info">
+            <span class="interview-label">In-Depth Interview</span>
+            <h3 class="interview-name">Hideo Kojima</h3>
+            <p class="interview-role">Founder, Kojima Productions</p>
+            <p class="interview-excerpt">"Games are the only medium where the audience can truly become part of the story. That's what makes them so powerful."</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter">
+    <div class="newsletter-bg"></div>
+    <div class="container">
+      <div class="newsletter-content reveal">
+        <h2 class="newsletter-title">Stay <span class="gradient-text">Ahead</span> of the Game</h2>
+        <p class="newsletter-text">Get the latest gaming news, exclusive interviews, and release updates delivered straight to your inbox every week.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address" required>
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">🎮</div>
+            <span>SilverNews</span>
+          </a>
+          <p>Your trusted source for gaming news, reviews, and exclusive industry interviews. Covering the world of gaming since 2026.</p>
+          <div class="footer-socials">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+            <a href="#" class="social-link" aria-label="Discord">💬</a>
+            <a href="#" class="social-link" aria-label="Twitch">📺</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">New Releases</a></li>
+            <li><a href="category.html">Upcoming Games</a></li>
+            <li><a href="category.html">Reviews</a></li>
+            <li><a href="category.html">Interviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="category.html">PC Gaming</a></li>
+            <li><a href="category.html">PlayStation</a></li>
+            <li><a href="category.html">Xbox</a></li>
+            <li><a href="category.html">Nintendo</a></li>
+            <li><a href="category.html">Mobile</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 SilverNews. All rights reserved.</span>
+        <span>Built with ❤️ for gamers</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

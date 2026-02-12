@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Releases — SilverNews</title>
+    <meta name="description"
+        content="Explore the latest game releases. Stay up to date with new games across PC, PlayStation, Xbox, and Nintendo.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="New Releases — SilverNews">
+    <meta property="og:description"
+        content="Explore the latest game releases. Stay up to date with new games across all platforms.">
+    <meta property="og:image" content="https://silvernews.com/images/og-cover.jpg">
+    <link rel="canonical" href="https://silvernews.com/category/new-releases">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="bg-particles" id="particles"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header scrolled" id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">🎮</div>
+                <span>SilverNews</span>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="category.html" class="nav-link active">New Releases</a>
+                <a href="category.html" class="nav-link">Upcoming</a>
+                <a href="category.html" class="nav-link">Reviews</a>
+                <a href="category.html" class="nav-link">Interviews</a>
+                <a href="#" class="nav-link">News</a>
+                <button class="nav-search" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                </button>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============ CATEGORY HEADER ============ -->
+    <div class="category-header">
+        <div class="container">
+            <span class="article-category-tag">🆕 Category</span>
+            <h1 class="category-title gradient-text">New Releases</h1>
+            <p class="category-description">The latest games hitting shelves and digital storefronts. Reviews, first
+                impressions, and everything you need to know before you buy.</p>
+        </div>
+    </div>
+
+    <!-- ============ CATEGORY CONTENT ============ -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">PC</button>
+                <button class="filter-btn">PlayStation</button>
+                <button class="filter-btn">Xbox</button>
+                <button class="filter-btn">Nintendo</button>
+                <button class="filter-btn">Mobile</button>
+                <button class="filter-btn">VR</button>
+            </div>
+
+            <div class="category-layout">
+                <div class="category-articles">
+                    <!-- Article 1 — Horizontal card -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&q=80" alt="GTA VI"
+                                class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">New
+                                Release</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">GTA VI Official Release Date
+                                    Finally Confirmed by Rockstar Games</h3>
+                            </a>
+                            <p class="card-excerpt">Rockstar Games has officially confirmed the highly anticipated
+                                release window for Grand Theft Auto VI.</p>
+                            <div class="card-meta">
+                                <span>Alex Morgan · Feb 12, 2026</span>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=400&q=80"
+                                alt="Unreal Engine 6" class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Technology</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">Unreal Engine 6 Announced with
+                                    Revolutionary AI-Powered Development Tools</h3>
+                            </a>
+                            <p class="card-excerpt">Epic Games reveals the next generation of game development with
+                                AI-driven workflows.</p>
+                            <div class="card-meta">
+                                <span>Sarah Chen · Feb 12, 2026</span>
+                                <span>7 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=400&q=80"
+                                alt="Top RPGs" class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Reviews</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">Top 15 RPGs That Will Define
+                                    2026 — Our Complete Ranked List</h3>
+                            </a>
+                            <p class="card-excerpt">From Fable to Dragon Age, these role-playing games are set to
+                                dominate the year.</p>
+                            <div class="card-meta">
+                                <span>James Wright · Feb 11, 2026</span>
+                                <span>10 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 4 -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1585620385456-4a0a3e5a4dce?w=400&q=80"
+                                alt="Steam Record" class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Industry</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">Steam Hits Record 40 Million
+                                    Concurrent Users on a Single Day</h3>
+                            </a>
+                            <p class="card-excerpt">Valve's gaming platform continues to breakthrough records with
+                                unprecedented player engagement.</p>
+                            <div class="card-meta">
+                                <span>Mike Torres · Feb 10, 2026</span>
+                                <span>4 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 5 -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1560419015-7c427e8ae5ba?w=400&q=80" alt="VR3"
+                                class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Hardware</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">PlayStation VR3 Leak Reveals
+                                    Eye-Tracking and Haptic Gloves</h3>
+                            </a>
+                            <p class="card-excerpt">Sony's next-gen VR headset reportedly features advanced eye-tracking
+                                and haptic feedback.</p>
+                            <div class="card-meta">
+                                <span>Lisa Park · Feb 9, 2026</span>
+                                <span>6 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Article 6 -->
+                    <article class="card card--horizontal">
+                        <a href="article.html" class="card-image-wrap">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=400&q=80"
+                                alt="Retro Gaming" class="card-image" width="400" height="300" loading="lazy">
+                        </a>
+                        <div class="card-body">
+                            <span
+                                style="font-size: var(--fs-xs); color: var(--accent-secondary); text-transform: uppercase; letter-spacing: 1px; font-weight: 600;">Feature</span>
+                            <a href="article.html">
+                                <h3 class="card-title" style="font-size: var(--fs-md);">How Retro Gaming Is Making a
+                                    Massive Comeback in 2026</h3>
+                            </a>
+                            <p class="card-excerpt">From pixel art to chiptune soundtracks, the retro gaming movement is
+                                bigger than ever.</p>
+                            <div class="card-meta">
+                                <span>David Kim · Feb 8, 2026</span>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pagination -->
+                    <nav class="pagination" aria-label="Page navigation">
+                        <button class="page-btn" aria-label="Previous page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6" />
+                            </svg>
+                        </button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn" aria-label="Next page">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                    </nav>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Categories</h3>
+                        <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-color); font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>New Releases</span>
+                                <span style="color: var(--accent-primary);">24</span>
+                            </a>
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-color); font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>Upcoming Games</span>
+                                <span style="color: var(--accent-primary);">18</span>
+                            </a>
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-color); font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>Reviews</span>
+                                <span style="color: var(--accent-primary);">42</span>
+                            </a>
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-color); font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>Interviews</span>
+                                <span style="color: var(--accent-primary);">12</span>
+                            </a>
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-color); font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>Industry News</span>
+                                <span style="color: var(--accent-primary);">56</span>
+                            </a>
+                            <a href="#"
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; font-size: var(--fs-sm); color: var(--text-secondary);">
+                                <span>Hardware</span>
+                                <span style="color: var(--accent-primary);">15</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h3 class="sidebar-title">Popular Tags</h3>
+                        <div class="tag-cloud">
+                            <a href="#" class="tag">GTA VI</a>
+                            <a href="#" class="tag">PS5</a>
+                            <a href="#" class="tag">Xbox</a>
+                            <a href="#" class="tag">PC Gaming</a>
+                            <a href="#" class="tag">RPG</a>
+                            <a href="#" class="tag">FPS</a>
+                            <a href="#" class="tag">Indie</a>
+                            <a href="#" class="tag">VR</a>
+                            <a href="#" class="tag">Esports</a>
+                            <a href="#" class="tag">Nintendo</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-widget"
+                        style="background: var(--gradient-card); border-color: var(--accent-primary);">
+                        <h3 class="sidebar-title" style="border-bottom-color: var(--accent-primary);">📧 Newsletter</h3>
+                        <p
+                            style="font-size: var(--fs-sm); color: var(--text-secondary); margin-bottom: var(--space-lg);">
+                            Never miss the latest gaming news.</p>
+                        <form>
+                            <input type="email" class="newsletter-input" placeholder="your@email.com"
+                                style="width: 100%; margin-bottom: var(--space-md);">
+                            <button class="newsletter-btn" style="width: 100%;">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">🎮</div>
+                        <span>SilverNews</span>
+                    </a>
+                    <p>Your trusted source for gaming news, reviews, and exclusive industry interviews.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                        <a href="#" class="social-link" aria-label="Twitch">📺</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="category.html">New Releases</a></li>
+                        <li><a href="category.html">Upcoming Games</a></li>
+                        <li><a href="category.html">Reviews</a></li>
+                        <li><a href="category.html">Interviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="category.html">PC Gaming</a></li>
+                        <li><a href="category.html">PlayStation</a></li>
+                        <li><a href="category.html">Xbox</a></li>
+                        <li><a href="category.html">Nintendo</a></li>
+                        <li><a href="category.html">Mobile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 SilverNews. All rights reserved.</span>
+                <span>Built with ❤️ for gamers</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
