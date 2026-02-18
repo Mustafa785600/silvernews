@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ---- Smooth link scrolling ----
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function (e) {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
@@ -240,5 +240,96 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // ---- Dynamic Articles Loader ----
+  const newsGrid = document.getElementById('latestNewsGrid');
+  if (newsGrid) {
+    loadArticles();
+  }
+
+  async function loadArticles() {
+    const grid = document.getElementById('latestNewsGrid');
+    const loading = document.getElementById('newsLoading');
+    if (!grid) return;
+
+    try {
+      const res = await fetch('articles.json?' + Date.now());
+      if (!res.ok) throw new Error('No articles.json');
+      const articles = await res.json();
+
+      if (!Array.isArray(articles) || articles.length === 0) {
+        showFallbackCards(grid, loading);
+        return;
+      }
+
+      // Sort by date, newest first
+      articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+      if (loading) loading.remove();
+      grid.innerHTML = '';
+
+      // Render up to 10 latest articles
+      const shown = articles.slice(0, 10);
+      shown.forEach((article, index) => {
+        const isFirst = index === 0;
+        const categoryIcons = {
+          'News': '📰', 'Indie': '🎮', 'Release': '🆕', 'Review': '📋',
+          'CEO': '👔', 'Controversy': '🔥', 'Update': '⬆️'
+        };
+        const icon = categoryIcons[article.category] || '📰';
+        const dateStr = new Date(article.date).toLocaleDateString('en-US', {
+          day: 'numeric', month: 'short', year: 'numeric'
+        });
+
+        const card = document.createElement('article');
+        card.className = isFirst ? 'card card--featured reveal visible' : 'card reveal visible';
+        card.innerHTML = `
+          <a href="articles/${article.slug}.html" class="card-image-wrap">
+            <span class="card-category">${icon} ${article.category}</span>
+          </a>
+          <div class="card-body">
+            <a href="articles/${article.slug}.html"><h3 class="card-title">${article.title}</h3></a>
+            <p class="card-excerpt">${article.description}</p>
+            <div class="card-meta">
+              <div class="card-author">
+                <div class="card-author-avatar"></div>
+                <span>SilverNews AI</span>
+              </div>
+              <span>${dateStr}</span>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+    } catch (e) {
+      showFallbackCards(grid, loading);
+    }
+  }
+
+  function showFallbackCards(grid, loading) {
+    if (loading) loading.remove();
+    const fallback = [
+      { title: 'AI-Powered News Coming Soon', desc: 'SilverNews uses artificial intelligence to discover and write the most relevant PC and console gaming news every day.', cat: '🤖 AI News', date: 'Coming Soon' },
+      { title: 'PC & Console Gaming Focus', desc: 'We cover everything from indie developer announcements to major studio releases across PlayStation, Xbox, Nintendo, and PC.', cat: '🎮 Gaming', date: 'Daily Updates' },
+      { title: 'Industry Insights & Analysis', desc: 'Deep analysis of CEO statements, studio acquisitions, and the business side of gaming that matters to you.', cat: '📊 Analysis', date: 'Stay Tuned' }
+    ];
+    grid.innerHTML = '';
+    fallback.forEach((item, i) => {
+      const card = document.createElement('article');
+      card.className = i === 0 ? 'card card--featured reveal visible' : 'card reveal visible';
+      card.innerHTML = `
+        <div class="card-body">
+          <h3 class="card-title">${item.title}</h3>
+          <p class="card-excerpt">${item.desc}</p>
+          <div class="card-meta">
+            <div class="card-author"><div class="card-author-avatar"></div><span>SilverNews</span></div>
+            <span>${item.date}</span>
+          </div>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+  }
 
 });
